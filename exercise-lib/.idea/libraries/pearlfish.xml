@@ -1,0 +1,11 @@
+<component name="libraryTable">
+  <library name="pearlfish">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/../exercise/libs/pearlfish/pearlfish-10b695f-standalone.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="jar://$PROJECT_DIR$/../exercise/libs/pearlfish/pearlfish-10b695f-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>
