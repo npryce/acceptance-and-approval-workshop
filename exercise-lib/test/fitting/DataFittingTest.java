@@ -8,7 +8,6 @@ import org.junit.Test;
 
 import java.io.IOException;
 import java.util.List;
-import java.util.Random;
 
 import static com.google.common.collect.Lists.newArrayList;
 import static com.natpryce.pearlfish.formats.Formats.SVG;
@@ -19,7 +18,7 @@ public class DataFittingTest {
 
     @Test
     public void fitLinearRandomData() throws IOException {
-        final List<Point> points = DataSets.dataSet1();
+        final List<Point> points = DataSets.dataSourceA(1);
 
         // This is what we're testing...
         final Polynomial trendLine = Algorithms.donkey(points);
@@ -34,14 +33,13 @@ public class DataFittingTest {
     }
 
     @Test
-    @Ignore("example failing SVG test")
     public void fitQuadraticRandomData() throws IOException {
         final int minX = 0;
         final int maxX = 1000;
-        final List<Point> points = DataSets.dataSet2(minX, maxX);
+        final List<Point> points = DataSets.dataSourceB(1);
 
         // This is what we're testing...
-        final Polynomial trendLine = DataFitting.polynomialFit(points, 2);
+        final Polynomial trendLine = Algorithms.foxbat(points);
 
         approval.check(new Object() {
             public List<Point> data = points;
@@ -51,5 +49,4 @@ public class DataFittingTest {
             };
         });
     }
-
 }

@@ -19,7 +19,7 @@ public class Algorithms {
         return Polynomial.lineBetween(sortedPoints.first(), sortedPoints.last());
     }
 
-    public static Polynomial chimpanzee(List<Point> points) {
+    public static Polynomial coatimundi(List<Point> points) {
         return lineBetweenRandomElements(points, 2);
     }
 
