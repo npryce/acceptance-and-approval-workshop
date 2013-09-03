@@ -1,9 +1,13 @@
-package fitting;
+package exercise;
 
-import static fitting.DoubleFunctions.max;
-import static fitting.DoubleFunctions.min;
-import static fitting.Point.X;
-import static fitting.Point.Y;
+import java.util.List;
+
+import static com.google.common.collect.Lists.newArrayList;
+import static exercise.Point.X;
+import static exercise.Point.Y;
+import static exercise.internal.DoubleFunctions.max;
+import static exercise.internal.DoubleFunctions.min;
+import static java.util.Arrays.asList;
 
 public class Polynomial {
     private final double[] coefficients;
@@ -46,5 +50,22 @@ public class Polynomial {
         }
 
         return new Point(x, y);
+    }
+
+    public Polyline segment(double minX, double maxX) {
+        return new Polyline(_segment(minX, maxX));
+    }
+
+    private List<Point> _segment(double minX, double maxX) {
+        if (degree() <= 1) {
+            return asList(atX(minX), atX(maxX));
+        }
+        else {
+            List<Point> points = newArrayList();
+            for (double x = minX; x <= maxX; x += 1.0) {
+                points.add(atX(x));
+            }
+            return points;
+        }
     }
 }

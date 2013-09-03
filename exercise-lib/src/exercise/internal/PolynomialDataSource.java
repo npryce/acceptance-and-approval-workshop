@@ -1,7 +1,7 @@
-package data;
+package exercise.internal;
 
-import fitting.Point;
-import fitting.Polynomial;
+import exercise.Point;
+import exercise.Polynomial;
 
 import java.util.Iterator;
 import java.util.Random;

@@ -14,13 +14,14 @@
 
   <g transform="translate(0,1000) scale(1,-1)">
     <g id="data">
-    {{#data}}
-      <use xlink:href="#datapoint" transform="translate({{x}},{{y}})"/>
+    {{#data}}<use xlink:href="#datapoint" transform="translate({{x}},{{y}})"/>
     {{/data}}
     </g>
 
     <path id="trend"
        style="opacity:0.75;fill:#ff0000;stroke:#ff0000;stroke-width:3;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
-       d="M {{trend.p0.x}},{{trend.p0.y}} L {{trend.p1.x}},{{trend.p1.y}}" />
+       d="M {{trend.start}} L
+       {{#trend.ends}}{{.}}
+       {{/trend.ends}}"/>
   </g>
 </svg>

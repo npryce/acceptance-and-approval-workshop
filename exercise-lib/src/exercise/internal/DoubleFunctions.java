@@ -1,4 +1,4 @@
-package fitting;
+package exercise.internal;
 
 import java.util.List;
 

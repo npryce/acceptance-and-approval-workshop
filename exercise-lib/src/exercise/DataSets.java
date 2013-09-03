@@ -1,7 +1,6 @@
-package data;
+package exercise;
 
-import fitting.Point;
-import fitting.Polynomial;
+import exercise.internal.PolynomialDataSource;
 
 import java.util.ArrayList;
 import java.util.Random;
@@ -10,12 +9,12 @@ import static com.google.common.collect.Iterables.limit;
 import static com.google.common.collect.Lists.newArrayList;
 
 public class DataSets {
-    public static ArrayList<Point> dataSourceA(int dataSetIndex) {
+    public static ArrayList<Point> dataSetA(int dataSetIndex) {
         Random rng = new Random(dataSetIndex);
         return take(100, new PolynomialDataSource(rng, new Polynomial(100,0.5), 50, 0, 1000));
     }
 
-    public static ArrayList<Point> dataSourceB(int dataSetIndex) {
+    public static ArrayList<Point> dataSetB(int dataSetIndex) {
         Random rng = new Random(dataSetIndex);
         return take(100, new PolynomialDataSource(rng, new Polynomial(250, -0.5, 0.00125, -0.00000005), 50, 0, 1000));
     }

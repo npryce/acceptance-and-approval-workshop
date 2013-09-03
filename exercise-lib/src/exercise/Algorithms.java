@@ -1,12 +1,13 @@
-package fitting;
+package exercise;
+
+import exercise.internal.DataFitting;
 
 import java.util.List;
 import java.util.Random;
 import java.util.TreeSet;
 
 import static com.google.common.collect.Sets.newTreeSet;
-import static fitting.Point.X;
-import static fitting.Point.by;
+import static exercise.Point.*;
 
 public class Algorithms {
     public static Polynomial aardvark(List<Point> points) {
@@ -20,7 +21,9 @@ public class Algorithms {
     }
 
     public static Polynomial coatimundi(List<Point> points) {
-        return lineBetweenRandomElements(points, 2);
+        TreeSet<Point> sortedPoints = newTreeSet(by(Y));
+        sortedPoints.addAll(points);
+        return Polynomial.lineBetween(sortedPoints.first(), sortedPoints.last());
     }
 
     public static Polynomial donkey(List<Point> points) {
@@ -28,7 +31,7 @@ public class Algorithms {
     }
 
     public static Polynomial elephant(List<Point> points) {
-        return lineBetweenRandomElements(points, 3);
+        return lineBetweenRandomElements(points, -1);
     }
 
     public static Polynomial foxbat(List<Point> points) {

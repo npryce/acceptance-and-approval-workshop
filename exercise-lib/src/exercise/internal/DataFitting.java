@@ -1,13 +1,9 @@
-package fitting;
+package exercise.internal;
 
-import java.lang.reflect.Array;
+import exercise.Point;
+import exercise.Polynomial;
+
 import java.util.List;
-import java.util.Random;
-import java.util.TreeSet;
-
-import static com.google.common.collect.Sets.newTreeSet;
-import static fitting.DoubleFunctions.*;
-import static fitting.Point.*;
 
 public class DataFitting {
 
@@ -17,10 +13,10 @@ public class DataFitting {
      */
     public static Polynomial linearFit(List<Point> points) {
         double n = points.size();
-        double sumX = sum(X, points);
-        double sumY = sum(Y, points);
-        double sumXY = sum(mul(X, Y), points);
-        double sumXX = sum(sq(X), points);
+        double sumX = DoubleFunctions.sum(Point.X, points);
+        double sumY = DoubleFunctions.sum(Point.Y, points);
+        double sumXY = DoubleFunctions.sum(DoubleFunctions.mul(Point.X, Point.Y), points);
+        double sumXX = DoubleFunctions.sum(DoubleFunctions.sq(Point.X), points);
 
         double divisor = n * sumXX - sumX * sumX;
 
@@ -42,6 +38,6 @@ public class DataFitting {
     }
 
     public static Polynomial solvePolynomialFit(List<Point> points, int degree) {
-        throw new UnsupportedOperationException(); // To be done...
+        throw new UnsupportedOperationException("polynomial fit of degree " + degree + " not implemented");
     }
 }

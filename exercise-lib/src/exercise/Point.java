@@ -1,4 +1,6 @@
-package fitting;
+package exercise;
+
+import exercise.internal.DoubleFunction;
 
 import java.util.Comparator;
 
