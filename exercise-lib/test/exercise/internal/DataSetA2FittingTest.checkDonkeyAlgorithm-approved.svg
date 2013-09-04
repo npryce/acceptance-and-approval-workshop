@@ -118,7 +118,7 @@
     </g>
 
     <path id="trend"
-       style="opacity:0.75;fill:#ff0000;stroke:#ff0000;stroke-width:3;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       style="opacity:0.75;fill:none;stroke:#ff0000;stroke-width:3;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
        d="M 0.0,109.67452436594645 L
        1000.0,596.1142697508411
        "/>
