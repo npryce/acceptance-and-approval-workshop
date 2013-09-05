@@ -12,6 +12,7 @@
     <orderEntry type="library" name="guava" level="project" />
     <orderEntry type="library" name="pearlfish" level="project" />
     <orderEntry type="library" name="jama" level="project" />
+    <orderEntry type="library" name="cucumber" level="project" />
   </component>
 </module>
 

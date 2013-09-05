@@ -1,0 +1,18 @@
+<component name="libraryTable">
+  <library name="cucumber">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/../exercise/libs/cucumber-jvm/cucumber-core-1.1.4.jar!/" />
+      <root url="jar://$PROJECT_DIR$/../exercise/libs/cucumber-jvm/cucumber-java-1.1.4.jar!/" />
+      <root url="jar://$PROJECT_DIR$/../exercise/libs/cucumber-jvm/cucumber-junit-1.1.4.jar!/" />
+      <root url="jar://$PROJECT_DIR$/../exercise/libs/cucumber-jvm/cucumber-jvm-deps-1.0.3.jar!/" />
+      <root url="jar://$PROJECT_DIR$/../exercise/libs/cucumber-jvm/gherkin-2.12.1.jar!/" />
+      <root url="jar://$PROJECT_DIR$/../exercise/libs/cucumber-jvm/jchronic-0.2.6.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="jar://$PROJECT_DIR$/../exercise/libs/cucumber-jvm/cucumber-core-1.1.4-sources.jar!/" />
+      <root url="jar://$PROJECT_DIR$/../exercise/libs/cucumber-jvm/cucumber-java-1.1.4-sources.jar!/" />
+      <root url="jar://$PROJECT_DIR$/../exercise/libs/cucumber-jvm/cucumber-junit-1.1.4-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

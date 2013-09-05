@@ -5,8 +5,8 @@ import java.util.List;
 import static com.google.common.collect.Lists.newArrayList;
 import static exercise.Point.X;
 import static exercise.Point.Y;
-import static exercise.internal.DoubleFunctions.max;
-import static exercise.internal.DoubleFunctions.min;
+import static exercise.internal.DoubleFunctions.reduceMax;
+import static exercise.internal.DoubleFunctions.reduceMin;
 import static java.util.Arrays.asList;
 
 public class Polynomial {
@@ -24,10 +24,10 @@ public class Polynomial {
     }
 
     public static Polynomial lineBetween(Point p1, Point p2) {
-        double minX = min(X, p1, p2);
-        double maxX = max(X, p1, p2);
-        double minY = min(X, p1, p2);
-        double maxY = max(Y, p1, p2);
+        double minX = reduceMin(X, p1, p2);
+        double maxX = reduceMax(X, p1, p2);
+        double minY = reduceMin(X, p1, p2);
+        double maxY = reduceMax(Y, p1, p2);
 
         double deltaX = maxX - minX;
         double deltaY = maxY - minY;
@@ -53,10 +53,10 @@ public class Polynomial {
     }
 
     public Polyline segment(double minX, double maxX) {
-        return new Polyline(_segment(minX, maxX));
+        return new Polyline(toListOfPointsBetween(minX, maxX));
     }
 
-    private List<Point> _segment(double minX, double maxX) {
+    private List<Point> toListOfPointsBetween(double minX, double maxX) {
         if (degree() <= 1) {
             return asList(atX(minX), atX(maxX));
         }

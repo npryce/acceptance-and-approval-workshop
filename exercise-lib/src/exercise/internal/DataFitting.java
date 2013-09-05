@@ -11,17 +11,16 @@ import static exercise.Point.Y;
 import static exercise.internal.DoubleFunctions.*;
 
 public class DataFitting {
-
     /**
      * @param points the points to fit a trend line to
      * @return a Polynomial of degree 1 (i.e. linear)
      */
     public static Polynomial linearFit(List<Point> points) {
         double n = points.size();
-        double sumX = sum(X, points);
-        double sumY = sum(Y, points);
-        double sumXY = sum(mul(X, Y), points);
-        double sumXX = sum(sq(X), points);
+        double sumX = reduceSum(X, points);
+        double sumY = reduceSum(Y, points);
+        double sumXY = reduceSum(mul(X, Y), points);
+        double sumXX = reduceSum(sq(X), points);
 
         double divisor = n * sumXX - sumX * sumX;
 
@@ -50,10 +49,10 @@ public class DataFitting {
 
         for (int row = 0; row < dim; row++) {
             for (int col = 0; col < dim; col++) {
-                a.set(row, col, sum(pow(X, row + col), points));
+                a.set(row, col, reduceSum(pow(X, row + col), points));
             }
 
-            b.set(row, 0, sum(mul(pow(X,row),Y), points));
+            b.set(row, 0, reduceSum(mul(pow(X, row), Y), points));
         }
 
         Matrix x = a.inverse().times(b);
