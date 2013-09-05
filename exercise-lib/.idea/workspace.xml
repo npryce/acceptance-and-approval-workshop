@@ -2,39 +2,37 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="a33732e9-801e-40c2-b033-3d1f99d9503c" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/test/exercise/internal/DataSetA1FittingTest.checkFoxbatAlgorithm-approved.svg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/test/exercise/internal/DataSetA1FittingTest.checkGibbonAlgorithm-approved.svg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/test/exercise/internal/DataSetA2FittingTest.checkFoxbatAlgorithm-approved.svg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/test/exercise/internal/DataSetA2FittingTest.checkGibbonAlgorithm-approved.svg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/test/exercise/internal/DataSetB1FittingTest.checkFoxbatAlgorithm-approved.svg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/test/exercise/internal/DataSetB1FittingTest.checkGibbonAlgorithm-approved.svg" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/test/fitting/DataFittingTest.fitLinearRandomData-approved.svg" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/exercise/internal/DataFitting.java" afterPath="$PROJECT_DIR$/src/exercise/internal/DataFitting.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test/exercise/internal/DataSetA1FittingTest.checkAardvarkAlgorithm-approved.svg" afterPath="$PROJECT_DIR$/test/exercise/internal/DataSetA1FittingTest.checkAardvarkAlgorithm-approved.svg" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test/exercise/internal/DataSetA1FittingTest.checkBaboonAlgorithm-approved.svg" afterPath="$PROJECT_DIR$/test/exercise/internal/DataSetA1FittingTest.checkBaboonAlgorithm-approved.svg" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test/exercise/internal/DataSetA1FittingTest.checkCoatimundiAlgorithm-approved.svg" afterPath="$PROJECT_DIR$/test/exercise/internal/DataSetA1FittingTest.checkCoatimundiAlgorithm-approved.svg" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test/exercise/internal/DataSetA1FittingTest.checkDonkeyAlgorithm-approved.svg" afterPath="$PROJECT_DIR$/test/exercise/internal/DataSetA1FittingTest.checkDonkeyAlgorithm-approved.svg" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test/exercise/internal/DataSetA1FittingTest.checkElephantAlgorithm-approved.svg" afterPath="$PROJECT_DIR$/test/exercise/internal/DataSetA1FittingTest.checkElephantAlgorithm-approved.svg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test/exercise/internal/DataSetA1FittingTest.checkFoxbatAlgorithm-approved.svg" afterPath="$PROJECT_DIR$/test/exercise/internal/DataSetA1FittingTest.checkFoxbatAlgorithm-approved.svg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test/exercise/internal/DataSetA1FittingTest.checkGibbonAlgorithm-approved.svg" afterPath="$PROJECT_DIR$/test/exercise/internal/DataSetA1FittingTest.checkGibbonAlgorithm-approved.svg" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test/exercise/internal/DataSetA2FittingTest.checkAardvarkAlgorithm-approved.svg" afterPath="$PROJECT_DIR$/test/exercise/internal/DataSetA2FittingTest.checkAardvarkAlgorithm-approved.svg" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test/exercise/internal/DataSetA2FittingTest.checkBaboonAlgorithm-approved.svg" afterPath="$PROJECT_DIR$/test/exercise/internal/DataSetA2FittingTest.checkBaboonAlgorithm-approved.svg" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test/exercise/internal/DataSetA2FittingTest.checkCoatimundiAlgorithm-approved.svg" afterPath="$PROJECT_DIR$/test/exercise/internal/DataSetA2FittingTest.checkCoatimundiAlgorithm-approved.svg" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test/exercise/internal/DataSetA2FittingTest.checkDonkeyAlgorithm-approved.svg" afterPath="$PROJECT_DIR$/test/exercise/internal/DataSetA2FittingTest.checkDonkeyAlgorithm-approved.svg" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test/exercise/internal/DataSetA2FittingTest.checkElephantAlgorithm-approved.svg" afterPath="$PROJECT_DIR$/test/exercise/internal/DataSetA2FittingTest.checkElephantAlgorithm-approved.svg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test/exercise/internal/DataSetA2FittingTest.checkFoxbatAlgorithm-approved.svg" afterPath="$PROJECT_DIR$/test/exercise/internal/DataSetA2FittingTest.checkFoxbatAlgorithm-approved.svg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test/exercise/internal/DataSetA2FittingTest.checkGibbonAlgorithm-approved.svg" afterPath="$PROJECT_DIR$/test/exercise/internal/DataSetA2FittingTest.checkGibbonAlgorithm-approved.svg" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test/exercise/internal/DataSetB1FittingTest.checkAardvarkAlgorithm-approved.svg" afterPath="$PROJECT_DIR$/test/exercise/internal/DataSetB1FittingTest.checkAardvarkAlgorithm-approved.svg" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test/exercise/internal/DataSetB1FittingTest.checkBaboonAlgorithm-approved.svg" afterPath="$PROJECT_DIR$/test/exercise/internal/DataSetB1FittingTest.checkBaboonAlgorithm-approved.svg" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test/exercise/internal/DataSetB1FittingTest.checkCoatimundiAlgorithm-approved.svg" afterPath="$PROJECT_DIR$/test/exercise/internal/DataSetB1FittingTest.checkCoatimundiAlgorithm-approved.svg" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test/exercise/internal/DataSetB1FittingTest.checkDonkeyAlgorithm-approved.svg" afterPath="$PROJECT_DIR$/test/exercise/internal/DataSetB1FittingTest.checkDonkeyAlgorithm-approved.svg" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test/exercise/internal/DataSetB1FittingTest.checkElephantAlgorithm-approved.svg" afterPath="$PROJECT_DIR$/test/exercise/internal/DataSetB1FittingTest.checkElephantAlgorithm-approved.svg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test/exercise/internal/DataSetB1FittingTest.checkFoxbatAlgorithm-approved.svg" afterPath="$PROJECT_DIR$/test/exercise/internal/DataSetB1FittingTest.checkFoxbatAlgorithm-approved.svg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test/exercise/internal/DataSetB1FittingTest.checkGibbonAlgorithm-approved.svg" afterPath="$PROJECT_DIR$/test/exercise/internal/DataSetB1FittingTest.checkGibbonAlgorithm-approved.svg" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test/exercise/internal/datafit.svg.template" afterPath="$PROJECT_DIR$/test/exercise/internal/datafit.svg.template" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="exercise-lib.iws" />
     <ignored path=".idea/workspace.xml" />
-    <file path="$USER_HOME$/projects/pearlfish/.idea/workspace.xml" changelist="a33732e9-801e-40c2-b033-3d1f99d9503c" time="1378255101607" ignored="false" />
+    <file path="$USER_HOME$/projects/pearlfish/.idea/workspace.xml" changelist="a33732e9-801e-40c2-b033-3d1f99d9503c" time="1378420942446" ignored="false" />
     <file path="/DoubleFunctions.java" changelist="a33732e9-801e-40c2-b033-3d1f99d9503c" time="1377849012170" ignored="false" />
     <file path="$USER_HOME$/projects/pearlfish/unstable-test/com/natpryce/pearlfish/unstable/prolog/PrologFormatTest.java" changelist="a33732e9-801e-40c2-b033-3d1f99d9503c" time="1377813830356" ignored="false" />
     <file path="$USER_HOME$/projects/pearlfish/unstable-test/com/natpryce/pearlfish/unstable/prolog/PrologFormatTest.generatesProlog-approved.pl" changelist="a33732e9-801e-40c2-b033-3d1f99d9503c" time="1378159191568" ignored="false" />
-    <file path="/Dummy.txt" changelist="a33732e9-801e-40c2-b033-3d1f99d9503c" time="1378230443119" ignored="false" />
+    <file path="/Dummy.txt" changelist="a33732e9-801e-40c2-b033-3d1f99d9503c" time="1378419548853" ignored="false" />
     <file path="$USER_HOME$/projects/pearlfish/pearlfish.xml" changelist="a33732e9-801e-40c2-b033-3d1f99d9503c" time="1377883346588" ignored="false" />
     <file path="$USER_HOME$/projects/pearlfish/build.xml" changelist="a33732e9-801e-40c2-b033-3d1f99d9503c" time="1378157936639" ignored="false" />
     <file path="$USER_HOME$/projects/pearlfish/pearlfish.properties" changelist="a33732e9-801e-40c2-b033-3d1f99d9503c" time="1377883346588" ignored="false" />
@@ -78,8 +76,9 @@
     <file path="/DoubleFunction.java" changelist="a33732e9-801e-40c2-b033-3d1f99d9503c" time="1378229182902" ignored="false" />
     <file path="/DataSetAFittingTest.java" changelist="a33732e9-801e-40c2-b033-3d1f99d9503c" time="1378229564064" ignored="false" />
     <file path="/DataSetB1FittingTest.java" changelist="a33732e9-801e-40c2-b033-3d1f99d9503c" time="1378229924566" ignored="false" />
-    <file path="/datafit.svg.template" changelist="a33732e9-801e-40c2-b033-3d1f99d9503c" time="1378252184197" ignored="false" />
-    <file path="/AbstractDataFittingTest.java" changelist="a33732e9-801e-40c2-b033-3d1f99d9503c" time="1378255101448" ignored="false" />
+    <file path="/datafit.svg.template" changelist="a33732e9-801e-40c2-b033-3d1f99d9503c" time="1378420617400" ignored="false" />
+    <file path="/AbstractDataFittingTest.java" changelist="a33732e9-801e-40c2-b033-3d1f99d9503c" time="1378420941994" ignored="false" />
+    <file path="$USER_HOME$/projects/pearlfish/src/com/natpryce/pearlfish/ReporterConfiguration.java" changelist="a33732e9-801e-40c2-b033-3d1f99d9503c" time="1378419562734" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -144,9 +143,7 @@
         <entry file="file://$PROJECT_DIR$/src/exercise/internal/DataFitting.java">
           <provider selected="true" editor-type-id="text-editor">
             <state line="44" column="40" selection-start="1175" selection-end="1175" vertical-scroll-proportion="0.0">
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
+              <folding />
             </state>
           </provider>
         </entry>
@@ -154,7 +151,7 @@
       <file leaf-file-name="datafit.svg.template" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/test/exercise/internal/datafit.svg.template">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="27" column="0" selection-start="883" selection-end="883" vertical-scroll-proportion="0.0">
+            <state line="24" column="13" selection-start="814" selection-end="814" vertical-scroll-proportion="-5.3">
               <folding />
             </state>
           </provider>
@@ -182,9 +179,7 @@
         <entry file="file://$PROJECT_DIR$/test/exercise/internal/DataSetA1FittingTest.java">
           <provider selected="true" editor-type-id="text-editor">
             <state line="13" column="0" selection-start="277" selection-end="277" vertical-scroll-proportion="0.0">
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
+              <folding />
             </state>
           </provider>
         </entry>
@@ -192,12 +187,8 @@
       <file leaf-file-name="AbstractDataFittingTest.java" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/test/exercise/internal/AbstractDataFittingTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="78" column="5" selection-start="2398" selection-end="2398" vertical-scroll-proportion="0.503937">
-              <folding>
-                <element signature="e#387#425#0" expanded="true" />
-                <element signature="e#2199#2390#0" expanded="true" />
-                <element signature="e#2379#2380#0" expanded="true" />
-              </folding>
+            <state line="104" column="0" selection-start="3154" selection-end="3154" vertical-scroll-proportion="0.7637795">
+              <folding />
             </state>
           </provider>
         </entry>
@@ -224,9 +215,7 @@
         <entry file="file://$PROJECT_DIR$/src/exercise/Algorithms.java">
           <provider selected="true" editor-type-id="text-editor">
             <state line="37" column="0" selection-start="1145" selection-end="1145" vertical-scroll-proportion="0.0">
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
+              <folding />
             </state>
           </provider>
         </entry>
@@ -239,7 +228,7 @@
     </FindUsagesManager>
   </component>
   <component name="Git.Settings">
-    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
   </component>
   <component name="GitLogSettings">
     <option name="myDateState">
@@ -249,7 +238,6 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/src/exercise/Polyline.java" />
         <option value="$PROJECT_DIR$/src/exercise/Polynomial.java" />
         <option value="$PROJECT_DIR$/test/exercise/internal/DataFittingTest.fitLinearRandomData.svg.template" />
         <option value="$PROJECT_DIR$/test/exercise/internal/DataFittingTest.fitLinearRandomData-approved.svg" />
@@ -263,6 +251,7 @@
         <option value="$PROJECT_DIR$/test/exercise/internal/DataSetB1FittingTest.java" />
         <option value="$PROJECT_DIR$/src/exercise/Algorithms.java" />
         <option value="$PROJECT_DIR$/src/exercise/internal/DataFitting.java" />
+        <option value="$PROJECT_DIR$/test/exercise/internal/DataSetA1FittingTest.checkAardvarkAlgorithm-received.svg" />
         <option value="$PROJECT_DIR$/test/exercise/internal/datafit.svg.template" />
         <option value="$PROJECT_DIR$/test/exercise/internal/AbstractDataFittingTest.java" />
       </list>
@@ -271,8 +260,8 @@
   <component name="ProjectFrameBounds">
     <option name="x" value="-1" />
     <option name="y" value="-4" />
-    <option name="width" value="1802" />
-    <option name="height" value="1050" />
+    <option name="width" value="1282" />
+    <option name="height" value="805" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <OptionsSetting value="true" id="Add" />
@@ -300,6 +289,8 @@
       <sortByType />
     </navigator>
     <panes>
+      <pane id="Scope" />
+      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -370,8 +361,6 @@
           </PATH>
         </subPane>
       </pane>
-      <pane id="PackagesPane" />
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -648,13 +637,12 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-1" y="-4" width="1802" height="1050" extended-state="6" />
+    <frame x="-1" y="-4" width="1282" height="805" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32876712" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32776934" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="JetGradle" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.39878234" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
@@ -664,13 +652,14 @@
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.33468395" sideWeight="0.6712329" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.39878234" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32876712" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.34602916" sideWeight="0.6712329" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32876712" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Documentation" active="true" anchor="right" auto_hide="false" internal_type="DOCKED" type="FLOATING" visible="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" x="99" y="96" width="1602" height="850" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.39878234" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
   <component name="VcsContentAnnotationSettings">
@@ -740,6 +729,13 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/src/exercise/Algorithms.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="37" column="0" selection-start="1145" selection-end="1145" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/exercise/DataSets.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="16" column="42" selection-start="518" selection-end="518" vertical-scroll-proportion="0.0">
@@ -780,9 +776,7 @@
     <entry file="file://$PROJECT_DIR$/src/exercise/Algorithms.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="37" column="0" selection-start="1145" selection-end="1145" vertical-scroll-proportion="0.0">
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -817,36 +811,28 @@
     <entry file="file://$PROJECT_DIR$/src/exercise/internal/DataFitting.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="44" column="40" selection-start="1175" selection-end="1175" vertical-scroll-proportion="0.0">
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/test/exercise/internal/DataSetA1FittingTest.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="13" column="0" selection-start="277" selection-end="277" vertical-scroll-proportion="0.0">
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/test/exercise/internal/datafit.svg.template">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="27" column="0" selection-start="883" selection-end="883" vertical-scroll-proportion="0.0">
+        <state line="24" column="13" selection-start="814" selection-end="814" vertical-scroll-proportion="-5.3">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/test/exercise/internal/AbstractDataFittingTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="78" column="5" selection-start="2398" selection-end="2398" vertical-scroll-proportion="0.503937">
-          <folding>
-            <element signature="e#387#425#0" expanded="true" />
-            <element signature="e#2199#2390#0" expanded="true" />
-            <element signature="e#2379#2380#0" expanded="true" />
-          </folding>
+        <state line="104" column="0" selection-start="3154" selection-end="3154" vertical-scroll-proportion="0.7637795">
+          <folding />
         </state>
       </provider>
     </entry>
