@@ -1,0 +1,220 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project name="exercise-lib" default="all">
+  
+  
+  <property file="exercise-lib.properties"/>
+  <!-- Uncomment the following property if no tests compilation is needed -->
+  <!-- 
+  <property name="skip.tests" value="true"/>
+   -->
+  
+  <!-- Compiler options -->
+  
+  <property name="compiler.debug" value="on"/>
+  <property name="compiler.generate.no.warnings" value="off"/>
+  <property name="compiler.args" value=""/>
+  <property name="compiler.max.memory" value="128m"/>
+  <patternset id="ignored.files">
+    <exclude name="**/CVS/**"/>
+    <exclude name="**/SCCS/**"/>
+    <exclude name="**/RCS/**"/>
+    <exclude name="**/rcs/**"/>
+    <exclude name="**/.DS_Store/**"/>
+    <exclude name="**/.svn/**"/>
+    <exclude name="**/.pyc/**"/>
+    <exclude name="**/.pyo/**"/>
+    <exclude name="**/*.pyc/**"/>
+    <exclude name="**/*.pyo/**"/>
+    <exclude name="**/.git/**"/>
+    <exclude name="**/*.hprof/**"/>
+    <exclude name="**/_svn/**"/>
+    <exclude name="**/.hg/**"/>
+    <exclude name="**/*.lib/**"/>
+    <exclude name="**/*~/**"/>
+    <exclude name="**/__pycache__/**"/>
+    <exclude name="**/.bundle/**"/>
+    <exclude name="**/*.rbc/**"/>
+  </patternset>
+  <patternset id="library.patterns">
+    <include name="*.zip"/>
+    <include name="*.apk"/>
+    <include name="*.war"/>
+    <include name="*.egg"/>
+    <include name="*.ear"/>
+    <include name="*.ane"/>
+    <include name="*.swc"/>
+    <include name="*.jar"/>
+  </patternset>
+  <patternset id="compiler.resources">
+    <include name="**/?*.properties"/>
+    <include name="**/?*.xml"/>
+    <include name="**/?*.gif"/>
+    <include name="**/?*.png"/>
+    <include name="**/?*.jpeg"/>
+    <include name="**/?*.jpg"/>
+    <include name="**/?*.html"/>
+    <include name="**/?*.dtd"/>
+    <include name="**/?*.tld"/>
+    <include name="**/?*.ftl"/>
+    <include name="**/?*.template"/>
+  </patternset>
+  
+  
+  <!-- Project Libraries -->
+  
+  <path id="library.cucumber.classpath">
+    <pathelement location="${basedir}/../exercise/libs/cucumber-jvm/cucumber-core-1.1.4.jar"/>
+    <pathelement location="${basedir}/../exercise/libs/cucumber-jvm/cucumber-java-1.1.4.jar"/>
+    <pathelement location="${basedir}/../exercise/libs/cucumber-jvm/cucumber-junit-1.1.4.jar"/>
+    <pathelement location="${basedir}/../exercise/libs/cucumber-jvm/cucumber-jvm-deps-1.0.3.jar"/>
+    <pathelement location="${basedir}/../exercise/libs/cucumber-jvm/gherkin-2.12.1.jar"/>
+    <pathelement location="${basedir}/../exercise/libs/cucumber-jvm/jchronic-0.2.6.jar"/>
+  </path>
+  
+  <path id="library.guava.classpath">
+    <pathelement location="${basedir}/../exercise/libs/guava/guava-14.0.1.jar"/>
+  </path>
+  
+  <path id="library.jama.classpath">
+    <pathelement location="${basedir}/lib/jama/jama-1.0.3.jar"/>
+  </path>
+  
+  <path id="library.junit.classpath">
+    <pathelement location="${basedir}/../exercise/libs/hamcrest/hamcrest-core-1.3.jar"/>
+    <pathelement location="${basedir}/../exercise/libs/hamcrest/hamcrest-library-1.3.jar"/>
+    <pathelement location="${basedir}/../exercise/libs/junit/junit-4.11.jar"/>
+  </path>
+  
+  <path id="library.pearlfish.classpath">
+    <pathelement location="${basedir}/../exercise/libs/pearlfish/pearlfish-1.0.0.0rc1-standalone.jar"/>
+  </path>
+  
+  <!-- Modules -->
+  
+  
+  <!-- Module exercise-lib -->
+  
+  <dirname property="module.exercise-lib.basedir" file="${ant.file}"/>
+  
+  
+  
+  <property name="compiler.args.exercise-lib" value="${compiler.args}"/>
+  
+  <property name="exercise-lib.output.dir" value="${module.exercise-lib.basedir}/out/production/exercise-lib"/>
+  <property name="exercise-lib.testoutput.dir" value="${module.exercise-lib.basedir}/out/test/exercise-lib"/>
+  
+  <path id="exercise-lib.module.bootclasspath">
+    <!-- Paths to be included in compilation bootclasspath -->
+  </path>
+  
+  <path id="exercise-lib.module.production.classpath">
+    <path refid="library.junit.classpath"/>
+    <path refid="library.guava.classpath"/>
+    <path refid="library.pearlfish.classpath"/>
+    <path refid="library.jama.classpath"/>
+    <path refid="library.cucumber.classpath"/>
+  </path>
+  
+  <path id="exercise-lib.runtime.production.module.classpath">
+    <pathelement location="${exercise-lib.output.dir}"/>
+    <path refid="library.junit.classpath"/>
+    <path refid="library.guava.classpath"/>
+    <path refid="library.pearlfish.classpath"/>
+    <path refid="library.jama.classpath"/>
+    <path refid="library.cucumber.classpath"/>
+  </path>
+  
+  <path id="exercise-lib.module.classpath">
+    <pathelement location="${exercise-lib.output.dir}"/>
+    <path refid="library.junit.classpath"/>
+    <path refid="library.guava.classpath"/>
+    <path refid="library.pearlfish.classpath"/>
+    <path refid="library.jama.classpath"/>
+    <path refid="library.cucumber.classpath"/>
+  </path>
+  
+  <path id="exercise-lib.runtime.module.classpath">
+    <pathelement location="${exercise-lib.testoutput.dir}"/>
+    <pathelement location="${exercise-lib.output.dir}"/>
+    <path refid="library.junit.classpath"/>
+    <path refid="library.guava.classpath"/>
+    <path refid="library.pearlfish.classpath"/>
+    <path refid="library.jama.classpath"/>
+    <path refid="library.cucumber.classpath"/>
+  </path>
+  
+  
+  <patternset id="excluded.from.module.exercise-lib">
+    <patternset refid="ignored.files"/>
+  </patternset>
+  
+  <patternset id="excluded.from.compilation.exercise-lib">
+    <patternset refid="excluded.from.module.exercise-lib"/>
+  </patternset>
+  
+  <path id="exercise-lib.module.sourcepath">
+    <dirset dir="${module.exercise-lib.basedir}">
+      <include name="src"/>
+    </dirset>
+  </path>
+  
+  <path id="exercise-lib.module.test.sourcepath">
+    <dirset dir="${module.exercise-lib.basedir}">
+      <include name="test"/>
+    </dirset>
+  </path>
+  
+  
+  <target name="compile.module.exercise-lib" depends="compile.module.exercise-lib.production,compile.module.exercise-lib.tests" description="Compile module exercise-lib"/>
+  
+  <target name="compile.module.exercise-lib.production" description="Compile module exercise-lib; production classes">
+    <mkdir dir="${exercise-lib.output.dir}"/>
+    <javac destdir="${exercise-lib.output.dir}" debug="${compiler.debug}" nowarn="${compiler.generate.no.warnings}" memorymaximumsize="${compiler.max.memory}" fork="true">
+      <compilerarg line="${compiler.args.exercise-lib}"/>
+      <bootclasspath refid="exercise-lib.module.bootclasspath"/>
+      <classpath refid="exercise-lib.module.production.classpath"/>
+      <src refid="exercise-lib.module.sourcepath"/>
+      <patternset refid="excluded.from.compilation.exercise-lib"/>
+    </javac>
+    
+    <copy todir="${exercise-lib.output.dir}">
+      <fileset dir="${module.exercise-lib.basedir}/src">
+        <patternset refid="compiler.resources"/>
+        <type type="file"/>
+      </fileset>
+    </copy>
+  </target>
+  
+  <target name="compile.module.exercise-lib.tests" depends="compile.module.exercise-lib.production" description="compile module exercise-lib; test classes" unless="skip.tests">
+    <mkdir dir="${exercise-lib.testoutput.dir}"/>
+    <javac destdir="${exercise-lib.testoutput.dir}" debug="${compiler.debug}" nowarn="${compiler.generate.no.warnings}" memorymaximumsize="${compiler.max.memory}" fork="true">
+      <compilerarg line="${compiler.args.exercise-lib}"/>
+      <bootclasspath refid="exercise-lib.module.bootclasspath"/>
+      <classpath refid="exercise-lib.module.classpath"/>
+      <src refid="exercise-lib.module.test.sourcepath"/>
+      <patternset refid="excluded.from.compilation.exercise-lib"/>
+    </javac>
+    
+    <copy todir="${exercise-lib.testoutput.dir}">
+      <fileset dir="${module.exercise-lib.basedir}/test">
+        <patternset refid="compiler.resources"/>
+        <type type="file"/>
+      </fileset>
+    </copy>
+  </target>
+  
+  <target name="clean.module.exercise-lib" description="cleanup module">
+    <delete dir="${exercise-lib.output.dir}"/>
+    <delete dir="${exercise-lib.testoutput.dir}"/>
+  </target>
+  
+  <target name="init" description="Build initialization">
+    <!-- Perform any build initialization in this target -->
+  </target>
+  
+  <target name="clean" depends="clean.module.exercise-lib" description="cleanup all"/>
+  
+  <target name="build.modules" depends="init, clean, compile.module.exercise-lib" description="build all modules"/>
+  
+  <target name="all" depends="build.modules" description="build all"/>
+</project>

@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project name="build" default="again">
+    <import file="exercise-lib.xml"/>
+
+    <property name="report.dir" value="${module.exercise-lib.basedir}/out/reports"/>
+
+    <property name="version" value="SNAPSHOT"/>
+
+    <target name="package" depends="test, taskdef.proguard">
+        <jar destfile="out/exercise-lib.jar">
+            <zipfileset dir="${exercise-lib.output.dir}" excludes="**/unstable/**"/>
+            <zipfileset dir="${basedir}/src/" includes="META-INF/**"/>
+        </jar>
+
+        <proguard>
+            <injar file="out/exercise-lib.jar"/>
+            <libraryjar refid="exercise-lib.module.production.classpath"/>
+            <libraryjar file="${java.home}/lib/rt.jar"/>
+            <outjar file="out/exercise-lib-final.jar"/>
+
+            <keep name="exercise.*"/>
+            <keep name="exercise.internal.*" allowobfuscation="yes"/>
+        </proguard>
+    </target>
+
+    <target name="taskdef.proguard">
+        <taskdef resource="proguard/ant/task.properties"
+                 classpath="tools/proguard4.10/lib/proguard.jar"/>
+    </target>
+
+    <target name="test" depends="all">
+        <delete dir="${report.dir}"/>
+        <mkdir dir="${report.dir}/xml"/>
+        <mkdir dir="${report.dir}/html"/>
+
+        <junit printsummary="yes"
+               haltonfailure="false"
+               failureproperty="tests.failed"
+               includeantruntime="false">
+
+            <classpath refid="exercise-lib.runtime.module.classpath"/>
+            <formatter type="xml"/>
+
+            <batchtest todir="${report.dir}/xml">
+                <fileset dir="${exercise-lib.testoutput.dir}">
+                    <include name="**/*Test.class"/>
+                    <exclude name="**/Abstract*.class"/>
+                </fileset>
+            </batchtest>
+        </junit>
+
+        <junitreport todir="${report.dir}/xml">
+            <fileset dir="${report.dir}/xml">
+                <include name="TEST-*.xml"/>
+            </fileset>
+            <report format="frames" todir="${report.dir}/html"/>
+        </junitreport>
+
+        <fail if="${tests.failed}"/>
+    </target>
+
+    <target name="real-clean">
+        <delete dir="out"/>
+    </target>
+
+    <target name="again" depends="real-clean, package"/>
+</project>
