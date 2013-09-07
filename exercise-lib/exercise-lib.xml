@@ -62,15 +62,6 @@
   
   <!-- Project Libraries -->
   
-  <path id="library.cucumber.classpath">
-    <pathelement location="${basedir}/../exercise/libs/cucumber-jvm/cucumber-core-1.1.4.jar"/>
-    <pathelement location="${basedir}/../exercise/libs/cucumber-jvm/cucumber-java-1.1.4.jar"/>
-    <pathelement location="${basedir}/../exercise/libs/cucumber-jvm/cucumber-junit-1.1.4.jar"/>
-    <pathelement location="${basedir}/../exercise/libs/cucumber-jvm/cucumber-jvm-deps-1.0.3.jar"/>
-    <pathelement location="${basedir}/../exercise/libs/cucumber-jvm/gherkin-2.12.1.jar"/>
-    <pathelement location="${basedir}/../exercise/libs/cucumber-jvm/jchronic-0.2.6.jar"/>
-  </path>
-  
   <path id="library.guava.classpath">
     <pathelement location="${basedir}/../exercise/libs/guava/guava-14.0.1.jar"/>
   </path>
@@ -112,7 +103,6 @@
     <path refid="library.guava.classpath"/>
     <path refid="library.pearlfish.classpath"/>
     <path refid="library.jama.classpath"/>
-    <path refid="library.cucumber.classpath"/>
   </path>
   
   <path id="exercise-lib.runtime.production.module.classpath">
@@ -121,7 +111,6 @@
     <path refid="library.guava.classpath"/>
     <path refid="library.pearlfish.classpath"/>
     <path refid="library.jama.classpath"/>
-    <path refid="library.cucumber.classpath"/>
   </path>
   
   <path id="exercise-lib.module.classpath">
@@ -130,7 +119,6 @@
     <path refid="library.guava.classpath"/>
     <path refid="library.pearlfish.classpath"/>
     <path refid="library.jama.classpath"/>
-    <path refid="library.cucumber.classpath"/>
   </path>
   
   <path id="exercise-lib.runtime.module.classpath">
@@ -140,7 +128,6 @@
     <path refid="library.guava.classpath"/>
     <path refid="library.pearlfish.classpath"/>
     <path refid="library.jama.classpath"/>
-    <path refid="library.cucumber.classpath"/>
   </path>
   
   

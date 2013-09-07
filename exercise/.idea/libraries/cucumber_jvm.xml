@@ -1,0 +1,13 @@
+<component name="libraryTable">
+  <library name="cucumber-jvm">
+    <CLASSES>
+      <root url="file://$PROJECT_DIR$/libs/cucumber-jvm" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="file://$PROJECT_DIR$/libs/cucumber-jvm" />
+    </SOURCES>
+    <jarDirectory url="file://$PROJECT_DIR$/libs/cucumber-jvm" recursive="false" />
+    <jarDirectory url="file://$PROJECT_DIR$/libs/cucumber-jvm" recursive="false" type="SOURCES" />
+  </library>
+</component>

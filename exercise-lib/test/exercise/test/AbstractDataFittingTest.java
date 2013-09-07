@@ -1,4 +1,4 @@
-package exercise.internal;
+package exercise.test;
 
 import com.google.common.base.Function;
 import com.natpryce.pearlfish.adaptor.junit.ApprovalRule;
@@ -10,7 +10,6 @@ import org.junit.Rule;
 import org.junit.Test;
 
 import java.io.IOException;
-import java.util.ArrayList;
 import java.util.List;
 
 @SuppressWarnings("UnusedDeclaration")
@@ -100,5 +99,5 @@ public abstract class AbstractDataFittingTest {
         });
     }
 
-    protected abstract ArrayList<Point> dataSet();
+    protected abstract List<Point> dataSet();
 }

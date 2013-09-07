@@ -6,21 +6,35 @@
 
     <property name="version" value="SNAPSHOT"/>
 
-    <target name="package" depends="test, taskdef.proguard">
-        <jar destfile="out/exercise-lib.jar">
+    <target name="package" depends="package.lib.final, package.source"/>
+
+    <target name="package.lib.plain" depends="compile.module.exercise-lib.production">
+        <jar destfile="out/data-fitting-plain.jar">
             <zipfileset dir="${exercise-lib.output.dir}" excludes="**/unstable/**"/>
             <zipfileset dir="${basedir}/src/" includes="META-INF/**"/>
         </jar>
+    </target>
 
+    <target name="package.lib.final" depends="package.lib.plain, taskdef.proguard">
         <proguard>
-            <injar file="out/exercise-lib.jar"/>
+            <injar file="out/data-fitting-plain.jar"/>
             <libraryjar refid="exercise-lib.module.production.classpath"/>
             <libraryjar file="${java.home}/lib/rt.jar"/>
-            <outjar file="out/exercise-lib-final.jar"/>
+            <outjar file="out/data-fitting.jar"/>
 
-            <keep name="exercise.*"/>
+            <keep name="exercise.*">
+                <field name="*"/>
+                <method name="*"/>
+            </keep>
             <keep name="exercise.internal.*" allowobfuscation="yes"/>
+            <keepattribute name="Signature"/>
         </proguard>
+    </target>
+
+    <target name="package.source">
+        <jar destfile="out/data-fitting-source.jar">
+            <zipfileset dir="src" includes= "**" excludes="**/internal/**"/>
+        </jar>
     </target>
 
     <target name="taskdef.proguard">
@@ -28,7 +42,7 @@
                  classpath="tools/proguard4.10/lib/proguard.jar"/>
     </target>
 
-    <target name="test" depends="all">
+    <target name="test" depends="package.lib.final, compile.module.exercise-lib.tests">
         <delete dir="${report.dir}"/>
         <mkdir dir="${report.dir}/xml"/>
         <mkdir dir="${report.dir}/html"/>
@@ -38,7 +52,12 @@
                failureproperty="tests.failed"
                includeantruntime="false">
 
-            <classpath refid="exercise-lib.runtime.module.classpath"/>
+            <classpath>
+                <pathelement location="${exercise-lib.testoutput.dir}"/>
+                <pathelement location="out/data-fitting.jar"/>
+                <path refid="exercise-lib.module.production.classpath"/>
+            </classpath>
+
             <formatter type="xml"/>
 
             <batchtest todir="${report.dir}/xml">
@@ -56,12 +75,23 @@
             <report format="frames" todir="${report.dir}/html"/>
         </junitreport>
 
+        <echo message="test report in file://${report.dir}/html/index.html"/>
+
         <fail if="${tests.failed}"/>
+    </target>
+
+    <target name="deploy" depends="package">
+        <delete dir="../exercise/libs/data-fitting" includes="*.jar"/>
+        <copy todir="../exercise/libs/data-fitting">
+            <fileset dir="out">
+                <include name="data-fitting.jar"/>
+            </fileset>
+        </copy>
     </target>
 
     <target name="real-clean">
         <delete dir="out"/>
     </target>
 
-    <target name="again" depends="real-clean, package"/>
+    <target name="again" depends="real-clean, test, package"/>
 </project>
