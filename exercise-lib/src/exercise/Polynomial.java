@@ -85,4 +85,18 @@ public class Polynomial {
     public int hashCode() {
         return Arrays.hashCode(coefficients);
     }
+
+    @Override
+    public String toString() {
+        StringBuilder b = new StringBuilder();
+        b.append(coefficients[0]);
+        for (int i = 1; i < coefficients.length; i++) {
+            double n = coefficients[i];
+            if (n == 0) continue;
+
+            b.append(" ").append(n < 0 ? "-" : "+").append(" ").append(Math.abs(n)).append("x");
+            if (i > 1) b.append("^").append(i);
+        }
+        return b.toString();
+    }
 }
