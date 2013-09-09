@@ -1,5 +1,6 @@
 package exercise;
 
+import java.util.Arrays;
 import java.util.List;
 
 import static com.google.common.collect.Lists.newArrayList;
@@ -67,5 +68,21 @@ public class Polynomial {
             }
             return points;
         }
+    }
+
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (o == null || getClass() != o.getClass()) return false;
+
+        Polynomial that = (Polynomial) o;
+
+        return Arrays.equals(coefficients, that.coefficients);
+
+    }
+
+    @Override
+    public int hashCode() {
+        return Arrays.hashCode(coefficients);
     }
 }
