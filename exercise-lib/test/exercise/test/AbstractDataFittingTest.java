@@ -1,6 +1,5 @@
 package exercise.test;
 
-import com.google.common.base.Function;
 import com.natpryce.pearlfish.adaptor.junit.ApprovalRule;
 import com.natpryce.pearlfish.formats.TemplateFormats;
 import exercise.Algorithms;
@@ -19,77 +18,42 @@ public abstract class AbstractDataFittingTest {
 
     @Test
     public void checkAardvarkAlgorithm() throws IOException {
-        checkAlgorithm(new Function<List<Point>, Polynomial>() {
-            @Override
-            public Polynomial apply(List<Point> data) {
-                return Algorithms.aardvark(data);
-            }
-        });
+        checkAlgorithm("aardvark");
     }
 
     @Test
     public void checkBaboonAlgorithm() throws IOException {
-        checkAlgorithm(new Function<List<Point>, Polynomial>() {
-            @Override
-            public Polynomial apply(List<Point> data) {
-                return Algorithms.baboon(data);
-            }
-        });
+        checkAlgorithm("baboon");
     }
 
     @Test
     public void checkCoatimundiAlgorithm() throws IOException {
-        checkAlgorithm(new Function<List<Point>, Polynomial>() {
-            @Override
-            public Polynomial apply(List<Point> data) {
-                return Algorithms.coatimundi(data);
-            }
-        });
+        checkAlgorithm("coatimundi");
     }
 
     @Test
     public void checkDonkeyAlgorithm() throws IOException {
-        checkAlgorithm(new Function<List<Point>, Polynomial>() {
-            @Override
-            public Polynomial apply(List<Point> data) {
-                return Algorithms.donkey(data);
-            }
-        });
+        checkAlgorithm("donkey");
     }
 
     @Test
     public void checkElephantAlgorithm() throws IOException {
-        checkAlgorithm(new Function<List<Point>, Polynomial>() {
-            @Override
-            public Polynomial apply(List<Point> data) {
-                return Algorithms.elephant(data);
-            }
-        });
+        checkAlgorithm("elephant");
     }
 
     @Test
     public void checkFoxbatAlgorithm() throws IOException {
-        checkAlgorithm(new Function<List<Point>, Polynomial>() {
-            @Override
-            public Polynomial apply(List<Point> data) {
-                return Algorithms.foxbat(data);
-            }
-        });
+        checkAlgorithm("foxbat");
     }
 
     @Test
     public void checkGibbonAlgorithm() throws IOException {
-        checkAlgorithm(new Function<List<Point>, Polynomial>() {
-            @Override
-            public Polynomial apply(List<Point> data) {
-                return Algorithms.gibbon(data);
-            }
-        });
+        checkAlgorithm("gibbon");
     }
 
-    private void checkAlgorithm(Function<List<Point>, Polynomial> algorithm) throws IOException {
+    private void checkAlgorithm(String algorithmName) throws IOException {
         final List<Point> points = dataSet();
-        final Polynomial trendLine = algorithm.apply(points);
+        final Polynomial trendLine = Algorithms.byName(algorithmName).apply(points);
 
         assert trendLine != null;
 
