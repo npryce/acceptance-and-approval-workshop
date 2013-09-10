@@ -11,10 +11,9 @@ import org.junit.Test;
 import java.io.IOException;
 import java.util.List;
 
-@SuppressWarnings("UnusedDeclaration")
 public abstract class AbstractDataFittingTest {
     @Rule
-    public ApprovalRule<Object> approval = new ApprovalRule<Object>("test", TemplateFormats.SVG.withTemplate("datafit.svg.template"));
+    public ApprovalRule<Object> approval = new ApprovalRule<>("test", TemplateFormats.SVG.withTemplate("datafit.svg.template"));
 
     @Test
     public void checkAardvarkAlgorithm() throws IOException {
@@ -56,6 +55,7 @@ public abstract class AbstractDataFittingTest {
         checkAlgorithm("hippopotamus");
     }
 
+    @SuppressWarnings("UnusedDeclaration")
     private void checkAlgorithm(String algorithmName) throws IOException {
         final List<Point> points = dataSet();
         final Polynomial trendLine = Algorithms.byName(algorithmName).apply(points);
