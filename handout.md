@@ -6,7 +6,7 @@ Introduction
 
 In this workshop we will explore how to apply Specification by Example (aka ATDD or BDD) to numerical and exploratory programming.
 
-To avoid getting bogged down we will simulate the numerical programming itself.  The challenge is to find the best algorithm, from a set of potential algorithms provided to you, to fit a polynomial curve to two-dimensional data points.
+To ensure that we can explore the topic within the time available, will simulate the numerical programming itself.  The challenge is to find the best algorithm, from a set of potential algorithms provided to you, to fit a polynomial curve to data sets containing two-dimensional data points.
 
 We will try doing this [Specification by Example] and then with a tool that combines [Approval Testing] with Specification by Example.
 
