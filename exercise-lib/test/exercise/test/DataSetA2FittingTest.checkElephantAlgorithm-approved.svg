@@ -119,8 +119,8 @@
 
     <path id="trend"
        fill="none" stroke="#ff0000" stroke-width="3" stroke-linecap="butt" stroke-linejoin="miter" stroke-opacity="0.75"
-       d="M 0.0,-27.504976898385138 L
-       1000.0,1242.882972745064
+       d="M 0.0,327.63585203317035 L
+       1000.0,327.63585203317035
        "/>
   </g>
 </svg>

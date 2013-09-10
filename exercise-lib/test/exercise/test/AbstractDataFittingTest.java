@@ -51,6 +51,11 @@ public abstract class AbstractDataFittingTest {
         checkAlgorithm("gibbon");
     }
 
+    @Test
+    public void checkHippopotamusAlgorithm() throws IOException {
+        checkAlgorithm("hippopotamus");
+    }
+
     private void checkAlgorithm(String algorithmName) throws IOException {
         final List<Point> points = dataSet();
         final Polynomial trendLine = Algorithms.byName(algorithmName).apply(points);

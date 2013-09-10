@@ -11,9 +11,9 @@ import java.util.TreeSet;
 
 import static com.google.common.collect.Sets.newTreeSet;
 import static exercise.Point.*;
+import static exercise.internal.DoubleFunctions.reduceAvg;
 
 public class Algorithms {
-
     public static Polynomial aardvark(List<Point> points) {
         return lineBetweenRandomElements(points, 1);
     }
@@ -35,7 +35,7 @@ public class Algorithms {
     }
 
     public static Polynomial elephant(List<Point> points) {
-        return lineBetweenRandomElements(points, -1);
+        return new Polynomial(reduceAvg(Y, points));
     }
 
     public static Polynomial foxbat(List<Point> points) {
@@ -44,6 +44,10 @@ public class Algorithms {
 
     public static Polynomial gibbon(List<Point> points) {
         return DataFitting.polynomialFit(points, 3);
+    }
+
+    public static Polynomial hippopotamus(List<Point> points) {
+        return DataFitting.polynomialFit(points, 10);
     }
 
     private static Map<String, Function<List<Point>, Polynomial>> algorithmsByName = Maps.newHashMap();
@@ -89,6 +93,12 @@ public class Algorithms {
             @Override
             public Polynomial apply(List<Point> data) {
                 return gibbon(data);
+            }
+        });
+        algorithmsByName.put("hippopotamus", new Function<List<Point>, Polynomial>() {
+            @Override
+            public Polynomial apply(List<Point> data) {
+                return hippopotamus(data);
             }
         });
     }

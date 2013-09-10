@@ -1,6 +1,7 @@
 package exercise.internal;
 
 import exercise.DoubleFunction;
+import exercise.Point;
 
 import java.util.List;
 
@@ -57,5 +58,9 @@ public class DoubleFunctions {
             max = Math.max(max, f.of(t));
         }
         return max;
+    }
+
+    public static double reduceAvg(DoubleFunction<Point> fn, List<Point> points) {
+        return reduceSum(fn, points) / points.size();
     }
 }
