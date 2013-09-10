@@ -14,12 +14,12 @@ public class PolynomialDataSource implements Iterable<Point>, Iterator<Point> {
     private final double xRange;
 
 
-    public PolynomialDataSource(final Random rng, Polynomial polynomial, double maxJitter, double minX, double maxX) {
+    public PolynomialDataSource(long seed, Polynomial polynomial, double maxJitter, double minX, double maxX) {
+        this.rng = new Random(seed);
         this.polynomial = polynomial;
         this.maxJitter = maxJitter;
         this.minX = minX;
         this.xRange = maxX - minX;
-        this.rng = rng;
     }
 
     @Override
