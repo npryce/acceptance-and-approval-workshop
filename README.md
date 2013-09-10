@@ -19,6 +19,7 @@ Audience Requirements
 ---------------------
 
  * Laptop (one per pair)
+ * JDK 1.7
  * Favourite Java programming environment installed
 
 Room Requirements
