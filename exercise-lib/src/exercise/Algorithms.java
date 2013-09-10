@@ -31,19 +31,19 @@ public class Algorithms {
     }
 
     public static Polynomial donkey(List<Point> points) {
-        return DataFitting.linearFit(points);
+        return new Polynomial(reduceAvg(Y, points)); // constant
     }
 
     public static Polynomial elephant(List<Point> points) {
-        return new Polynomial(reduceAvg(Y, points));
+        return DataFitting.polynomialFit(points, 1); // linear
     }
-
+    
     public static Polynomial foxbat(List<Point> points) {
-        return DataFitting.polynomialFit(points, 2);
+        return DataFitting.polynomialFit(points, 2); // quadratic
     }
 
     public static Polynomial gibbon(List<Point> points) {
-        return DataFitting.polynomialFit(points, 3);
+        return DataFitting.polynomialFit(points, 3); // cubic
     }
 
     public static Polynomial hippopotamus(List<Point> points) {
