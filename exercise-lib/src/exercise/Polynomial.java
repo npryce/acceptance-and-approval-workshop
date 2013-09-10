@@ -94,8 +94,8 @@ public class Polynomial {
             double n = coefficients[i];
             if (n == 0) continue;
 
-            b.append(" ").append(n < 0 ? "-" : "+").append(" ").append(Math.abs(n)).append("x");
-            if (i > 1) b.append("^").append(i);
+            b.append(" ").append(n < 0 ? "-" : "+").append(" ").append(Math.abs(n)).append("*x");
+            if (i > 1) b.append("**").append(i);
         }
         return b.toString();
     }
