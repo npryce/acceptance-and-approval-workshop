@@ -1,6 +1,8 @@
 package exercise.pearlfish;
 
 import com.natpryce.pearlfish.adaptor.junit.ApprovalRule;
+import com.natpryce.pearlfish.naming.NextToSourceNamingConvention;
+import com.natpryce.pearlfish.naming.SingleDirectoryNamingConvention;
 import exercise.*;
 import org.junit.Rule;
 import org.junit.Test;
@@ -14,7 +16,9 @@ import static com.natpryce.pearlfish.formats.TemplateFormats.SVG;
 
 public class PearlfishDataFittingTest {
     @Rule
-    public ApprovalRule<Object> approval = new ApprovalRule<Object>("reports/pearlfish", SVG.withTemplate(new File("test/exercise/pearlfish/datafit.svg.template")));
+    public ApprovalRule<Object> approval = new ApprovalRule<Object>(
+            SVG.withTemplateFile("test/exercise/pearlfish/datafit.svg.template"),
+            SingleDirectoryNamingConvention.forDirectory("reports/pearlfish"));
 
     @Test
     public void fittingDataSetA() throws IOException {
@@ -24,7 +28,7 @@ public class PearlfishDataFittingTest {
         approval.check(new Object() {
             public String dataSource = "A";
             public List<Point> data = sample;
-            public Polyline trend = polynomial.segment(0,1000);
+            public Polyline trend = polynomial.segment(0, 1000);
         });
     }
 }
