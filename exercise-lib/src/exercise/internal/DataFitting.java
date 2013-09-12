@@ -8,7 +8,7 @@ import java.util.List;
 
 import static exercise.Point.X;
 import static exercise.Point.Y;
-import static exercise.internal.DoubleFunctions.*;
+import static exercise.internal.Functional.*;
 
 public class DataFitting {
     /**

@@ -5,7 +5,10 @@ import exercise.Point;
 
 import java.util.List;
 
-public class DoubleFunctions {
+import static com.google.common.collect.Iterables.limit;
+import static com.google.common.collect.Lists.newArrayList;
+
+public class Functional {
     public static <T> DoubleFunction<T> mul(final DoubleFunction<T> f1, final DoubleFunction<T> f2) {
         return new DoubleFunction<T>() {
             @Override
@@ -62,5 +65,9 @@ public class DoubleFunctions {
 
     public static double reduceAvg(DoubleFunction<Point> fn, List<Point> points) {
         return reduceSum(fn, points) / points.size();
+    }
+
+    public static <T> List<T> take(int limitSize, Iterable<T> dataset) {
+        return newArrayList(limit(dataset, limitSize));
     }
 }

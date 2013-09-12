@@ -6,9 +6,9 @@ Introduction
 
 In this workshop we will explore how to apply Specification by Example (aka ATDD or BDD) to numerical and exploratory programming.
 
-To ensure that we can explore the topic within the time available, will simulate the numerical programming itself.  The challenge is to find the best algorithm, from a set of potential algorithms provided to you, to fit a polynomial curve to data sets containing two-dimensional data points.
+To ensure that we can explore the topic within the time available, will simulate the numerical programming itself.  The challenge is to find the best algorithm, from a set of potential algorithms provided to you, to fit a polynomial curve to data sets containing two-dimensional data points sampled from a data source.
 
-We will try doing this [Specification by Example] and then with a tool that combines [Approval Testing] with Specification by Example.
+We will try doing this with [Specification by Example] and then with a tool that combines [Approval Testing] with Specification by Example.
 
 
 Data Sets
@@ -18,8 +18,8 @@ The class `exercise.DataSets` provides data sets acquired from sources of two-di
 
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~java
 public class DataSets {
-    public static List<Point> dataSetA(int index) { ... }
-    public static List<Point> dataSetB(int index) { ... }
+    public static List<Point> sampleDataSourceA(int index) { ... }
+    public static List<Point> sampleDataSourceB(int index) { ... }
     ...
 }
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~

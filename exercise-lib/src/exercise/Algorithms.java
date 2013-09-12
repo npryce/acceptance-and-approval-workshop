@@ -11,7 +11,7 @@ import java.util.TreeSet;
 
 import static com.google.common.collect.Sets.newTreeSet;
 import static exercise.Point.*;
-import static exercise.internal.DoubleFunctions.reduceAvg;
+import static exercise.internal.Functional.reduceAvg;
 
 public class Algorithms {
     public static Polynomial aardvark(List<Point> points) {

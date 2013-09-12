@@ -6,8 +6,8 @@ import java.util.List;
 import static com.google.common.collect.Lists.newArrayList;
 import static exercise.Point.X;
 import static exercise.Point.Y;
-import static exercise.internal.DoubleFunctions.reduceMax;
-import static exercise.internal.DoubleFunctions.reduceMin;
+import static exercise.internal.Functional.reduceMax;
+import static exercise.internal.Functional.reduceMin;
 import static java.util.Arrays.asList;
 
 public class Polynomial {
