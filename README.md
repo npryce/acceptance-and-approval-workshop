@@ -34,6 +34,7 @@ Room Requirements
 Timetable
 ---------
 
+| Time        | Activity                                            |
 |-------------|-----------------------------------------------------|
 | 0:00 - 0:15 | Introduction                                        |
 | 0:15 - 1:00 | Develop solution with by cucumber                   |
