@@ -15,13 +15,17 @@ To ensure that we can explore the topic within the time available, we will simul
 Cucumber Tests
 --------------
 
-To run cucumber tests, run the class 
+To run tests with Cucumber, run the class `exercise.cucmber.CucumberDataFittingTest` as a JUnit test. That will test the feature files in the directory `test/exercise/cucumber` and write an HTML report to `out/reports/cucumber`.
+
+The features are interpreted by step definitions in the class `exercise.cucmber.DataFittingSteps`.  Feel free to add new steps that you find useful.
 
 
 Pearlfish Tests
 ---------------
 
+To run tests with Pearlfish, run the class 	`exercise.pearlfish.PearlfishDataFittingTest` as a JUnit test.  That will generate "received" files in the directory `out/reports/pearlfish`. Rename them to replace "received" with "approved" to approve them.
 
+The files are generated with templates in `test/exercise/cucumber`.  Feel free to modify or add to the templates to generate the reports you want to see.
 
 Data Sets
 ---------
