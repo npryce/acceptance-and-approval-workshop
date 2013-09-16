@@ -12,8 +12,15 @@ To ensure that we can explore the topic within the time available, we will simul
 
 
 
-Cucumber Step Definitions
--------------------------
+Cucumber Tests
+--------------
+
+To run cucumber tests, run the class 
+
+
+Pearlfish Tests
+---------------
+
 
 
 Data Sets
