@@ -11,6 +11,13 @@ The challenge is to find the best algorithm to fit a polynomial curve to data se
 To ensure that we can explore the topic within the time available, we will simulate the numerical programming itself. Instead of writing a suitable algorithm, you only have to pick the most acceptable a set of potential algorithms provided to you.
 
 
+Challenges
+----------
+
+1. Implement the method `fitCurveForDataSourceA` of class `exercise.DataFitting` to fit a curve to data sets sampled from Data Source A.
+
+2. Implement the method `fitCurveForDataSourceB` of class `exercise.DataFitting` to fit a curve to data sets sampled from Data Source B.
+
 
 Cucumber Tests
 --------------
@@ -27,8 +34,8 @@ To run tests with Pearlfish, run the class 	`exercise.pearlfish.PearlfishDataFit
 
 The files are generated with templates in `test/exercise/cucumber`.  Feel free to modify or add to the templates to generate the reports you want to see.
 
-Data Sets
----------
+Data Sets and Data Sources
+--------------------------
 
 The class `exercise.DataSets` provides data sets acquired from sources of two-dimensional data.
 
