@@ -1,7 +1,7 @@
 Curve Fitting to Data Source {{dataSource}}
 ===========================================
 
-The following sample from Data Source {{dataSource}} is best fit by curve {{curve}}.
+The following sample from Data Set {{dataSet}} is best fit by curve {{curve}}.
 
 | x     | y       |
 +------:|--------:|

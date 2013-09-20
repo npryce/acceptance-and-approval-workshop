@@ -36,12 +36,13 @@ public class DumpData {
     }
 
     public static void main(String[] args) {
-        if (args.length < 2 || args.length > 3) {
+        if (args.length < 3 || args.length > 4) {
             usageError();
         }
 
         String dataSetName = args[0];
-        String dataSetIndexStr = args[1];
+        String offsetStr = args[1];
+        String countStr = args[2];
 
         TableFormat format;
         if (args.length == 2) {
@@ -55,21 +56,15 @@ public class DumpData {
         }
         assert format != null;
 
-        int index;
-        try {
-            index = Integer.parseInt(dataSetIndexStr);
-        } catch (NumberFormatException e) {
-            System.err.println("invalid data set index: " + dataSetIndexStr);
-            usageError();
-            return;
-        }
+        int offset = parseCardinal(offsetStr, "offset", 0);
+        int count = parseCardinal(countStr, "count", 1);
 
         List<Point> data;
         if (dataSetName.equalsIgnoreCase("a")) {
-            data = DataSets.sampleDataSourceA(index);
+            data = DataSets.sampleDataSetA(offset, count);
         }
         else if (dataSetName.equalsIgnoreCase("b")) {
-            data = DataSets.sampleDataSourceB(index);
+            data = DataSets.sampleDataSetB(offset, count);
         }
         else {
             System.err.println("invalid data set name: " + dataSetName);
@@ -83,10 +78,27 @@ public class DumpData {
         }
     }
 
+    private static int parseCardinal(String str, String name, int minValue) {
+        try {
+            int i = Integer.parseInt(str);
+            if (i < minValue) {
+                System.err.println(name + " is less than " + minValue);
+                usageError();
+            }
+
+            return i;
+        } catch (NumberFormatException e) {
+            System.err.println("invalid " + name + ": " + str);
+            usageError();
+            return -1;
+        }
+    }
+
     private static void usageError() {
-        System.err.println("command-line arguments: <data set name> <data set index> [<format>]");
+        System.err.println("command-line arguments: <data set name> <offset> <count> [<format>]");
         System.err.println("data set name: a, b");
-        System.err.println("index:         integer >= 0");
+        System.err.println("offset:        integer, 0+");
+        System.err.println("count:         integer, 1+");
         System.err.println("format:        tsv, csv, cucumber");
         System.exit(1);
     }

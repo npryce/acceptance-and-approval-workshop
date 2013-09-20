@@ -8,6 +8,6 @@ import java.util.List;
 public class DataSetA1FittingTest extends AbstractDataFittingTest {
     @Override
     protected List<Point> dataSet() {
-        return DataSets.sampleDataSourceA(1);
+        return DataSets.sampleDataSetA(0, 200);
     }
 }

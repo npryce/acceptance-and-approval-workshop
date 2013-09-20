@@ -13,13 +13,16 @@ public class PolynomialDataSource implements Iterable<Point>, Iterator<Point> {
     private final double minX;
     private final double xRange;
 
+    private long count;
 
-    public PolynomialDataSource(long seed, Polynomial polynomial, double maxJitter, double minX, double maxX) {
-        this.rng = new Random(seed);
+
+    public PolynomialDataSource(Polynomial polynomial, double maxJitter, double minX, double maxX, long start) {
+        this.rng = new Random();
         this.polynomial = polynomial;
         this.maxJitter = maxJitter;
         this.minX = minX;
         this.xRange = maxX - minX;
+        this.count = start;
     }
 
     @Override
@@ -33,6 +36,7 @@ public class PolynomialDataSource implements Iterable<Point>, Iterator<Point> {
     }
 
     public Point next() {
+        rng.setSeed(count++ * polynomial.hashCode());
         return jitter(polynomial.atX(minX + rng.nextDouble() * xRange));
     }
 

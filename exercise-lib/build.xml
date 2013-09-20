@@ -69,6 +69,7 @@
                 <fileset dir="${exercise-lib.testoutput.dir}">
                     <include name="**/*Test.class"/>
                     <exclude name="**/Abstract*.class"/>
+                    <exclude name="exercise/internal/**"/> <!-- refer to proguarded classes -->
                 </fileset>
             </batchtest>
         </junit>
@@ -85,7 +86,7 @@
         <fail if="${tests.failed}"/>
     </target>
 
-    <target name="deploy" depends="test, package">
+    <target name="deploy" depends="real-clean, test, package">
         <delete dir="../exercise/libs/data-fitting" includes="*.jar"/>
         <copy file="out/data-fitting.jar" todir="../exercise/libs/data-fitting"/>
     </target>

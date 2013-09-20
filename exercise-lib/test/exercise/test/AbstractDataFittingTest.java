@@ -13,7 +13,7 @@ import java.util.List;
 
 public abstract class AbstractDataFittingTest {
     @Rule
-    public ApprovalRule<Object> approval = new ApprovalRule<>("test", TemplateFormats.SVG.withTemplate("datafit.svg.template"));
+    public ApprovalRule<Object> approval = new ApprovalRule<Object>("test", TemplateFormats.SVG.withTemplate("datafit.svg.template"));
 
     @Test
     public void checkAardvarkAlgorithm() throws IOException {

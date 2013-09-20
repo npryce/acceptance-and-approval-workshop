@@ -45,7 +45,6 @@ public class Functional {
         return total;
     }
 
-    @SafeVarargs
     public static <T> double reduceMin(DoubleFunction<T> f, T first, T second, T... more) {
         double min = Math.min(f.of(first), f.of(second));
         for (T t : more) {
@@ -54,7 +53,6 @@ public class Functional {
         return min;
     }
 
-    @SafeVarargs
     public static <T> double reduceMax(DoubleFunction<T> f, T first, T second, T... more) {
         double max = Math.max(f.of(first), f.of(second));
         for (T t : more) {

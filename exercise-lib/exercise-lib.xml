@@ -63,7 +63,9 @@
   <!-- Project Libraries -->
   
   <path id="library.guava.classpath">
-    <pathelement location="${basedir}/../exercise/libs/guava/guava-14.0.1.jar"/>
+    <fileset dir="${basedir}/../exercise/libs/guava">
+      <patternset refid="library.patterns"/>
+    </fileset>
   </path>
   
   <path id="library.jama.classpath">
@@ -77,8 +79,13 @@
   </path>
   
   <path id="library.pearlfish.classpath">
-    <pathelement location="${basedir}/../exercise/libs/pearlfish/pearlfish-1.0.0.0rc1-standalone.jar"/>
+    <fileset dir="${basedir}/../exercise/libs/pearlfish">
+      <patternset refid="library.patterns"/>
+    </fileset>
   </path>
+  
+  
+  <!-- Global Libraries -->
   
   <!-- Modules -->
   
