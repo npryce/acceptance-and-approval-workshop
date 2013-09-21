@@ -13,11 +13,11 @@ The challenge is to find the best algorithm to fit a polynomial curve to data se
 Challenges
 ----------
 
-1. Implement the method `fitCurveForDataSourceA` of class `exercise.DataFitting` to fit a curve to data sets obtained from Data Source A.
+1. Implement the method `fitCurveForDataSourceA` of class `exercise.DataFitting` to fit a curve to data sets obtained from Data Set A.
 
-2. Implement the method `fitCurveForDataSourceB` of class `exercise.DataFitting` to fit a curve to data sets obtained from Data Source B.
+2. Implement the method `fitCurveForDataSourceB` of class `exercise.DataFitting` to fit a curve to data sets obtained from Data Set B.
 
-To ensure that we can explore the topic within the time available, we will simulate the numerical programming itself. Instead of writing a suitable algorithm, you only have to pick the most acceptable from a set of potential algorithms implemented in the class `exercise.Algorithms`.
+To ensure that we can explore the topic within the time available, we will simulate the numerical programming. Instead of writing the algorithm yourself, you only have to pick the most acceptable algorithm from those implemented in the class `exercise.Algorithms`.
 
 
 Phase 1. Specification by Example with Cucumber
@@ -41,17 +41,24 @@ The files are generated with templates in `test/exercise/cucumber`.  Feel free t
 Data Sets
 ---------
 
-The class `exercise.DataSets` provides data sets acquired from sources of two-dimensional data.
+The class `exercise.DataSets` provides lists of points from the two data sets, A and B, starting at offset _start_ and returning the next _count_ points.
 
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~java
 public class DataSets {
-    public static List<Point> dataSetA(int index) { ... }
-    public static List<Point> dataSetB(int index) { ... }
+    public static List<Point> sampleDataSetA(int start, int count) { ... }
+    public static List<Point> sampleDataSetB(int start, int count) { ... }
     ...
 }
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-The data sets returned from these methods are identified by integer index.  A call with the same index will always return the same data set.
+You can dump the data sets by running the Java main class `example.tools.DumpData`. The command-line arguments are: _data-set-name_ _start_ _count_ [_format_].
+
+ * data-set-name: `a`, `b`
+ * start:         integer, 0+
+ * count:         integer, 1+
+ * format:        `tsv` (tab separated values), `csv` (comma separated values), `cucumber` (Cucumber's table syntax).
+
+
 
 
 
