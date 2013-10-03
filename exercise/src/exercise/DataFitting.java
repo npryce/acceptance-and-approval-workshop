@@ -3,11 +3,11 @@ package exercise;
 import java.util.List;
 
 public class DataFitting {
-    public static Polynomial fitCurveForDataSourceA(List<Point> points) {
-        throw new UnsupportedOperationException("implement curve fitting for data source A");
+    public static Polynomial curveForDataSetA(List<Point> points) {
+        throw new AssertionError("you need to implement curve fitting for data set A");
     }
 
-    public static Polynomial fitCurveForDataSourceB(List<Point> points) {
-        throw new UnsupportedOperationException("implement curve fitting for data source B");
+    public static Polynomial curveForDataSetB(List<Point> points) {
+        throw new UnsupportedOperationException("you need to implement curve fitting for data set B");
     }
 }

@@ -20,7 +20,7 @@ public class PearlfishDataFittingTest {
     @Test
     public void fittingDataSetA() throws IOException {
         final List<Point> sample = DataSets.sampleDataSetA(0, 200);
-        final Polynomial polynomial = DataFitting.fitCurveForDataSourceA(sample);
+        final Polynomial polynomial = DataFitting.curveForDataSetA(sample);
 
         approval.check(new Object() {
             public String dataSet = "A";
