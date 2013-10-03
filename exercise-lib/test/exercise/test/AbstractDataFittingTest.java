@@ -1,7 +1,6 @@
 package exercise.test;
 
 import com.natpryce.pearlfish.adaptor.junit.ApprovalRule;
-import com.natpryce.pearlfish.formats.TemplateFormats;
 import exercise.Algorithms;
 import exercise.Point;
 import exercise.Polynomial;
@@ -11,9 +10,11 @@ import org.junit.Test;
 import java.io.IOException;
 import java.util.List;
 
+import static com.natpryce.pearlfish.formats.TemplateFormats.SVG;
+
 public abstract class AbstractDataFittingTest {
     @Rule
-    public ApprovalRule<Object> approval = new ApprovalRule<Object>("test", TemplateFormats.SVG.withTemplate("datafit.svg.template"));
+    public ApprovalRule<Object> approval = new ApprovalRule<Object>("test", SVG.withTemplate("datafit.svg.template"));
 
     @Test
     public void checkAardvarkAlgorithm() throws IOException {
