@@ -1,6 +1,6 @@
 package exercise.test;
 
-import com.natpryce.pearlfish.adaptor.junit.ApprovalRule;
+import info.pearlfish.adaptor.junit.ApprovalRule;
 import exercise.Algorithms;
 import exercise.Point;
 import exercise.Polynomial;
@@ -10,7 +10,7 @@ import org.junit.Test;
 import java.io.IOException;
 import java.util.List;
 
-import static com.natpryce.pearlfish.formats.TemplateFormats.SVG;
+import static info.pearlfish.formats.TemplateFormats.SVG;
 
 public abstract class AbstractDataFittingTest {
     @Rule

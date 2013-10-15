@@ -1,7 +1,7 @@
 package exercise.pearlfish;
 
-import com.natpryce.pearlfish.adaptor.junit.ApprovalRule;
-import com.natpryce.pearlfish.naming.SingleDirectoryNamingConvention;
+import info.pearlfish.adaptor.junit.ApprovalRule;
+import info.pearlfish.naming.SingleDirectoryNamingConvention;
 import exercise.*;
 import org.junit.Rule;
 import org.junit.Test;
@@ -9,7 +9,7 @@ import org.junit.Test;
 import java.io.IOException;
 import java.util.List;
 
-import static com.natpryce.pearlfish.formats.TemplateFormats.SVG;
+import static info.pearlfish.formats.TemplateFormats.SVG;
 
 public class PearlfishDataFittingTest {
     @Rule
