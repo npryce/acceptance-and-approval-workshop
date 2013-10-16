@@ -37,9 +37,9 @@ Timetable
 | Time        | Activity                                            |
 |-------------|-----------------------------------------------------|
 | 0:00 - 0:15 | Introduction                                        |
-| 0:15 - 1:00 | Develop solution with by cucumber                   |
+| 0:15 - 1:00 | Develop solution, using Cucumber                    |
 | 1:00 - 1:15 | Discussion                                          |
-| 1:15 - 1:45 | Develop solution with Pearlfish & SVG or Gnuplot    |
+| 1:15 - 1:45 | Develop solution using Pearlfish & SVG or Gnuplot   |
 | 1:45 - 2:00 | Discussion                                          |
 | 2:00 - 2:30 | Develop something with Pearlfish & Markdown         |
 | 2:30 - 3:00 | Discussion and wrap-up                              |
