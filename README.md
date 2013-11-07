@@ -6,7 +6,12 @@ Copyright (c) 2013, Nat Pryce
 Overview
 --------
 
-A half-day, hands-on programming workshop exploring how Specification by Example (aka Acceptance Test Driven Development, BDD) can work with numerical and exploratory programming.
+A half-day, hands-on programming workshop exploring how Specification by Example (aka Acceptance Test Driven Development, BDD) can work with numerical and exploratory programming, when:
+
+ * acceptance is qualitative rather than precise, and/or…
+ * the behaviour you want to capture involves a lot of numerical data, and/or…
+ * you want to transition the results of exploratory programming to production.
+
 
 Audience
 --------
