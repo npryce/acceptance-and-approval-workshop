@@ -1,9 +1,0 @@
-<component name="libraryTable">
-  <library name="data-fitting">
-    <CLASSES>
-      <root url="jar://$PROJECT_DIR$/libs/data-fitting/data-fitting.jar!/" />
-    </CLASSES>
-    <JAVADOC />
-    <SOURCES />
-  </library>
-</component>
