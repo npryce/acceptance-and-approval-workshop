@@ -4,3 +4,5 @@ out/
 exercise/reports/
 workspace.xml
 *~
+*.pyc
+*.pyo
