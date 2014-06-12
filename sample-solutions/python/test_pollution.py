@@ -27,3 +27,9 @@ def test_parse_dataset(out):
                   samples=p.load_history("../../datasets/air-quality.csv"),
                   title="Historical Air Pollution")
 
+@approval(format="md")
+def test_projection(out):
+    end_year=2020
+    write_samples(out,
+                  samples=p.load_history("../../datasets/air-quality.csv").project(to=end_year),
+                  title="Air Pollution Projected to " + str(end_year))
