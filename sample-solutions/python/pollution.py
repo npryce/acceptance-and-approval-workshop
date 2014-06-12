@@ -1,16 +1,24 @@
 
 from collections import namedtuple
-import csv
+import pandas as pd
 
-sample = namedtuple('sample', [
-        'year', 'roadside_pm10', 'urban_pm10', 'rural_ozone', 'urban_ozone'])
+class sample(namedtuple('_sample', ['year', 'roadside_pm10', 'urban_pm10', 'rural_ozone', 'urban_ozone'])):
+    pass
 
-def opt_num(s):
-    return float(s) if s != "" else None
+class samples:
+    def __init__(self, history):
+        self.history = history
+        
+    def __iter__(self):
+        return iter(self._samples)
 
-def parse_row(row):
-    return sample(int(row[0]), *tuple(map(opt_num, row[1:])))
+    def project(to):
+        d_year = float(self.history[-1].year - self.history[0].year)
 
 def load_history(fname):
-    return map(parse_row, list(csv.reader(open(fname)))[18:])
+    return pd.read_csv(fname, skiprows=17, index_col='Year')
+
+def project(history, to_year):
+    return history
+
 

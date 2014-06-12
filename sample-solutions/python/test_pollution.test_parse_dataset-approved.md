@@ -1,7 +1,7 @@
 Historical Air Pollution
 ========================
 
-| year | roadside pm10 | urban pm10 | rural ozone | urban ozone |
+| Year | Roadside PM10 | Urban background PM10 | Rural ozone | Urban background ozone |
 | 1987 |  |  | 58.46 | 38.0 |
 | 1988 |  |  | 66.14 | 41.25 |
 | 1989 |  |  | 70.08 | 44.75 |
