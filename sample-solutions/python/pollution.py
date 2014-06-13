@@ -19,6 +19,7 @@ def load_history(fname):
     return pd.read_csv(fname, skiprows=17, index_col='Year')
 
 def project(history, to_year):
-    return history
+    new_index = range(history.index[0], to_year+1)
+    return history.reindex(new_index).interpolate(method='spline', order=2)
 
 
