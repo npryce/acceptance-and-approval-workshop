@@ -1,4 +1,5 @@
 
+import string
 import os
 from filecmp import cmp as file_contents_equal
 
@@ -21,7 +22,8 @@ def approve(test_fn, template_file, format, args, kwargs):
         if template_file is None:
             test_fn(received, *args, **kwargs)
         else:
-            received.write(open(template_file).read().format(**test_fn(*args, **kwargs)))
+            template = string.Template(open(template_file).read())
+            received.write(template.substitute(test_fn(*args, **kwargs)))
     
     assert file_contents_equal(received_file, approved_file)
     
