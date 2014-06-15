@@ -4,35 +4,25 @@ from approval import approval
 import pollution as p
 
 
-def cell_str(n):
-    return "" if n is None or math.isnan(n) else str(n)
+def to_tr(elts):
+    return "<tr>" + str.join("", ("<td>" + str(e) + "</td>" for e in elts)) + "</tr>"
 
-def row_str(cells):
-    return "| " + str.join(" | ", cells) + " |\n"
+def samples_to_html(samples):
+    return str.join("\n", map(to_tr, samples.to_records()))
 
-def ident_to_str(s):
-    return s.replace("_", " ")
 
-def write_samples(r, samples, title=None):
-    samples = samples.reset_index()
-    
-    if title is not None:
-        r.write(title + "\n")
-        r.write("="*len(title)+"\n")
-        r.write("\n")
-    r.write(row_str(samples.columns))
-    for row in samples.index:
-        r.write(row_str(cell_str(samples[col][row]) for col in samples.columns))
+dataset_file = "../../datasets/air-quality-urban-background-ozone.csv"
+report_template = "../../datasets/air-quality.html"
 
-@approval(format="md")
-def test_parse_dataset(out):
-    write_samples(out, 
-                  samples=p.load_history("../../datasets/air-quality.csv"),
-                  title="Historical Air Pollution")
+@approval(template=report_template)
+def test_parse_dataset():
+    return dict(
+        samples=samples_to_html(p.load_history(dataset_file)),
+        title="Historical Air Pollution - Urban Background Ozone")
 
-@approval(format="md")
-def test_projection(out):
+@approval(template=report_template)
+def test_projection():
     end_year=2020
-    write_samples(out,
-                  samples=p.project(p.load_history("../../datasets/air-quality.csv"), to_year=end_year),
-                  title="Air Pollution Projected to " + str(end_year))
+    return dict(
+        samples=samples_to_html(p.project(p.load_history(dataset_file), to_year=end_year)),
+        title="Air Pollution Projected to " + str(end_year) + " - Urban Background Ozone")
