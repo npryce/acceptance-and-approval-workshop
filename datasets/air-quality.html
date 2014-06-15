@@ -1,18 +1,18 @@
 <!html>
 <html>
   <head>
-	<title>{title}</title>
+	<title>${title}</title>
 	<link rel="stylesheet" type="text/css" href="style.css"/>
   </head>
   <body>
-	<h1>{title}</h1>
+	<h1>${title}</h1>
 	<table>
 <thead>
 <tr><th>Year</th><th>Average PPM</th></tr>
 </thead>
-<tbody>
-{samples}
+<tbody id="samples">
+${samples}
 </tbody>
-	</table>
-  </body>
+</table>
+</body>
 </html>
