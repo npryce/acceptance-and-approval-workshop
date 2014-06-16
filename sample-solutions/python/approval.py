@@ -28,7 +28,10 @@ def approve(test_fn, template_file, format, args, kwargs):
             template_params.update(test_fn(*args, **kwargs))
             received.write(template.substitute(template_params))
     
-    assert file_contents_equal(received_file, approved_file)
+    assert os.path.exists(approved_file), \
+        "no approved file: " + approved_file
+    assert file_contents_equal(received_file, approved_file), \
+        "diff " + approved_file + " " + received_file
     
     os.remove(received_file)
 
