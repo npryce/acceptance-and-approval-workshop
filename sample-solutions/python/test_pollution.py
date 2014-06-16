@@ -12,7 +12,7 @@ def samples_to_html(samples):
 
 
 dataset_file = "../../datasets/air-quality-urban-background-ozone.csv"
-report_template = "../../datasets/air-quality.html"
+report_template = "../../templates/air-quality.html"
 
 @approval(template=report_template)
 def test_parse_dataset():

@@ -23,7 +23,10 @@ def approve(test_fn, template_file, format, args, kwargs):
             test_fn(received, *args, **kwargs)
         else:
             template = string.Template(open(template_file).read())
-            received.write(template.substitute(test_fn(*args, **kwargs)))
+            template_params = dict()
+            template_params["_resourcedir"] = os.path.dirname(template_file);
+            template_params.update(test_fn(*args, **kwargs))
+            received.write(template.substitute(template_params))
     
     assert file_contents_equal(received_file, approved_file)
     
