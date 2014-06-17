@@ -17,12 +17,15 @@ report_template = "../../templates/air-quality.html"
 @approval(template=report_template)
 def test_parse_dataset():
     return dict(
-        samples=samples_to_html(p.load_history(dataset_file)),
+        history=samples_to_html(p.load_history(dataset_file)),
+        projection="",
         title="Historical Air Pollution - Urban Background Ozone")
 
 @approval(template=report_template)
 def test_projection():
+    history = p.load_history(dataset_file)
     end_year=2020
     return dict(
-        samples=samples_to_html(p.project(p.load_history(dataset_file), to_year=end_year)),
+        history=samples_to_html(history),
+        projection=samples_to_html(p.project(history, to_year=end_year)),
         title="Air Pollution Projected to " + str(end_year) + " - Urban Background Ozone")
