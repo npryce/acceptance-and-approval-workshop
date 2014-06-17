@@ -24,8 +24,7 @@ Audience Requirements
 ---------------------
 
  * Laptop (one per pair)
- * JDK 1.7
- * Favourite Java programming environment installed
+ * Programming language and development environment of choice (as long as you can find a pair to work with)
 
 Room Requirements
 -----------------
@@ -39,12 +38,12 @@ Room Requirements
 Timetable
 ---------
 
-| Time        | Activity                                            |
-|-------------|-----------------------------------------------------|
-| 0:00 - 0:15 | Introduction                                        |
-| 0:15 - 1:00 | Develop solution, using Cucumber                    |
-| 1:00 - 1:15 | Discussion                                          |
-| 1:15 - 1:45 | Develop solution using Pearlfish & SVG or Gnuplot   |
-| 1:45 - 2:00 | Discussion                                          |
-| 2:00 - 2:30 | Develop something with Pearlfish & Markdown         |
-| 2:30 - 3:00 | Discussion and wrap-up                              |
+| Time        | Activity                                                           |
+|-------------|--------------------------------------------------------------------|
+| 0:00 - 0:15 | Introduction                                                       |
+| 0:15 - 2:30 | Hands-on                                                           |
+|             | * Write an approval test for parsing an timeseries dataset         |
+|             | * Implement a simple projection of the dataset into the future     |
+|             | * Add a visualisation of the projection to the approval test       |
+|             | * Iterate, improving the projection and/or apply to other datasets |
+| 2:30 - 3:00 | Discussion and wrap-up                                             |
