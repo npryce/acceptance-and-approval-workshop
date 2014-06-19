@@ -23,11 +23,9 @@ def load_history(fname):
 
 
 def project(history, to_year):
-    first = history[0]
+    first = history[-6]
     last = history[-1]
     dvalue_dt = (last.value - first.value) / float(last.year - first.year)
     
     return TimeSeries([Sample(year, last.value + dvalue_dt*(year-last.year))
                        for year in range(last.year, to_year+1)])
-
-    
