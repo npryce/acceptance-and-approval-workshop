@@ -19,7 +19,7 @@ def test_parse_dataset():
     return dict(
         history=samples_to_html(p.load_history(dataset_file)),
         projection="",
-        title="Historical Atmospheric CO2")
+        title="Historical Atmospheric CO<sub>2</sub>")
 
 @approval(template=report_template)
 def test_projection():
@@ -29,4 +29,4 @@ def test_projection():
     return dict(
         history=samples_to_html(history),
         projection=samples_to_html(p.project(history, to_year=end_year)),
-        title=" Atmospheric CO2 Projected to " + str(end_year))
+        title=" Atmospheric CO<sub>2</sub> Projected to " + str(end_year))
