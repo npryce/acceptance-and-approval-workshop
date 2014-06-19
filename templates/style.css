@@ -3,12 +3,12 @@ body {
     font-family: sans-serif;
 }
 
-table {
+.timeseries {
     border-collapse: collapse;
     border: 1px solid black;
 }
 
-td, th {
+.timeseries td, .timeseries th {
     border: 1px solid black;
     padding: 0.5em;
     text-align: center;
@@ -19,4 +19,8 @@ td, th {
     padding-left: 4em;
     padding-right: 8em;
     padding-bottom: 2em;
+}
+
+#projection {
+    background-color: yellow;
 }

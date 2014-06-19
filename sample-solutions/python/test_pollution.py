@@ -1,14 +1,14 @@
-
+2
 import math
 from approval import approval
 import pollution as p
 
 
-def to_tr(elts):
-    return "<tr>" + str.join("", ("<td>" + str(e) + "</td>" for e in elts)) + "</tr>"
+def to_tr(row):
+    return "<tr>" + str.join("", ("<td>" + str(val) + "</td>" for val in row)) + "</tr>"
 
-def samples_to_html(samples):
-    return str.join("\n", map(to_tr, samples.to_records()))
+def samples_to_html(series):
+    return str.join("\n", map(to_tr, series))
 
 
 dataset_file = "../../datasets/air-quality-urban-background-ozone.csv"
