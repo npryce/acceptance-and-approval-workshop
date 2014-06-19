@@ -12,7 +12,7 @@ def samples_to_html(series):
 
 
 dataset_file = "../../datasets/monthly-atmospheric-co2.csv"
-report_template = "../../templates/air-quality.html"
+report_template = "../../templates/timeseries.html"
 
 @approval(template=report_template)
 def test_parse_dataset():
