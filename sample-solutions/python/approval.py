@@ -31,7 +31,7 @@ def approve(test_fn, template_file, format, args, kwargs):
     assert os.path.exists(approved_file), \
         "no approved file: " + approved_file
     assert file_contents_equal(received_file, approved_file), \
-        "diff " + approved_file + " " + received_file
+        "diff " + received_file + " " + approved_file
     
     os.remove(received_file)
 
