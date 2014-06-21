@@ -20,7 +20,7 @@ The challenge is to parse a time-series data set and come up with a reasonable e
 4. Approve your _received_ file by renaming it to have the suffix "-approved.html" and rerun your test to check that it now passes.
 5. Write code to project the dataset to the date 2050
     * Do something really simple to start with. E.g. a linear projection along the line between the first and last historical data points.
-    * Add the projected data points to your HTML file by formatting them as HTML table rows and substituting them for ${projection} in the HTML template.
+    * Add the projected data points to your HTML file by formatting them as HTML table rows and substituting them for `${projection}` in the HTML template.
 6. Iterate, improving the projection until you consider it worth approving, and approve the _received_ file.
 
  
