@@ -25,7 +25,7 @@ The challenge is to parse a time-series data set and come up with a reasonable e
 
  
 
-
+There is a very simple Python approval testing module here: https://gist.github.com/npryce/9c4dc2e0ea7eaf6e27fc. Download approval.py.
 
 
 
