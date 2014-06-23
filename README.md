@@ -41,9 +41,8 @@ Timetable
 | Time        | Activity                                                           |
 |-------------|--------------------------------------------------------------------|
 | 0:00 - 0:15 | Introduction                                                       |
-| 0:15 - 2:30 | Hands-on                                                           |
+| 0:15 - 2:45 | Hands-on                                                           |
 |             | - Write an approval test for parsing an timeseries dataset         |
 |             | - Implement a simple projection of the dataset into the future     |
-|             | - Add a visualisation of the projection to the approval test       |
-|             | - Iterate, improving the projection and/or apply to other datasets |
-| 2:30 - 3:00 | Discussion and wrap-up                                             |
+|             | - Use visualisation to iteratively improve the projection          |
+| 2:45 - 3:00 | Discussion and wrap-up                                             |
