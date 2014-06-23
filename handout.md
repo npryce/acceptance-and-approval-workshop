@@ -5,7 +5,7 @@ In this workshop we will explore how to apply [Approval Testing] and [Specificat
 
 The challenge is to parse a time-series data set and come up with a reasonable extrapolation of the data set into the future.
 
-1. Write code to parse the data set in `datasets/monthly-atmospheric-co2.csv` into a data structure
+1. Write code to parse the data set in `{dataset}` into a data structure
 2. In a test harness (e.g., a test function or class/method that can be run by a test framework), write the parsed data out to a file as HTML. Name the output file after the test, with the suffix "-received.html".  We will refer to this file as the test's _received_ file.
     * A template HTML file is in `templates/timeseries.html`.  You can generate an HTML report of your parsed data set by replacing the following strings in the template:
         * `${_resourcedir}`: the directory containing the HTML file, relative to where you are writing the output file

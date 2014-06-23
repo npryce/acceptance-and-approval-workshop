@@ -1,13 +1,20 @@
 
-MD_SRC:=$(wildcard *.md)
+dataset=seasonally-adjusted-atmospheric-co2.csv
 
 .PHONY: all
-all: out/handout.pdf
-all: out/README.pdf
+all: out/handout.md
+all: out/python/approval.py
+all: out/$(dataset)
 
-out/%.pdf: %.md
+out/%.md: %.md
 	@mkdir -p $(dir $@)
-	pandoc --standalone -f markdown_github+simple_tables -o $@ $<
+	sed -e 's:{dataset}:$(dataset):g' $< > $@
+
+out/$(dataset): datasets/$(dataset)
+
+out/python/approval.py: sample-solutions/python/approval.py
+	@mkdir -p $(dir $@)
+	cp $< $@
 
 .PHONY: clean
 clean:

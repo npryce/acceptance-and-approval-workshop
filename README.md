@@ -38,11 +38,11 @@ Room Requirements
 Timetable
 ---------
 
-| Time        | Activity                                                           |
-|-------------|--------------------------------------------------------------------|
-| 0:00 - 0:15 | Introduction                                                       |
-| 0:15 - 2:45 | Hands-on                                                           |
-|             | - Write an approval test for parsing an timeseries dataset         |
-|             | - Implement a simple projection of the dataset into the future     |
-|             | - Use visualisation to iteratively improve the projection          |
-| 2:45 - 3:00 | Discussion and wrap-up                                             |
+| Time        | Activity                                                       |
+|-------------|----------------------------------------------------------------|
+| 0:00 - 0:15 | Introduction                                                   |
+| 0:15 - 2:45 | Hands-on                                                       |
+|             | - Write an approval test for parsing a timeseries dataset      |
+|             | - Implement a simple projection of the dataset into the future |
+|             | - Use visualisation to iteratively improve the projection      |
+| 2:45 - 3:00 | Discussion and wrap-up                                         |
