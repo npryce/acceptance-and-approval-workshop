@@ -1,7 +1,7 @@
 Accepting the Unexpectable
 ==========================
 
-Copyright (c) 2013, Nat Pryce
+Copyright (c) 2014, Nat Pryce
 
 Overview
 --------
