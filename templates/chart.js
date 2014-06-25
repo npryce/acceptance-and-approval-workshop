@@ -1,7 +1,7 @@
 
 function datapoints(id) {
     return d3.selectAll("#"+id+" tr").selectAll("td").map(function(d) {
-	return {x: parseInt(d[0].textContent), y: parseFloat(d[1].textContent)};
+	return {x: parseFloat(d[0].textContent), y: parseFloat(d[1].textContent)};
     });
 }
 
