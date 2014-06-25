@@ -1,5 +1,5 @@
 
-dataset=seasonally-adjusted-atmospheric-co2.csv
+dataset=atmospheric-co2-1992.csv
 out=out/accepting-the-unexpectable
 
 .PHONY: all
