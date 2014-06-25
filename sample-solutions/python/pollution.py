@@ -19,7 +19,7 @@ class TimeSeries(object):
 
 
 def load_history(fname):
-    return TimeSeries([s for s in (Sample(float(row[0]), float(row[1])) 
+    return TimeSeries([s for s in (Sample(float(row[0]), float(row[2])) 
                                    for row in list(csv.reader(open(fname)))[1:])
                        if s.value >= 0])
 

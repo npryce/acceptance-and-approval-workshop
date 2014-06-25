@@ -1,4 +1,4 @@
-`2
+
 import math
 from approval import approval
 import pollution as p
@@ -10,8 +10,7 @@ def to_tr(row):
 def samples_to_html(series):
     return str.join("\n", map(to_tr, series))
 
-
-dataset_file = "../../datasets/seasonally-adjusted-atmospheric-co2.csv"
+dataset_file = "../../datasets/atmospheric-co2-1992.csv"
 report_template = "../../templates/timeseries.html"
 
 @approval(template=report_template)
